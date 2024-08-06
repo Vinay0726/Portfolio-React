@@ -49,7 +49,7 @@ function SlideBar() {
       opacity: 0,
     },
   };
-  const items = ["Home", "Skills", "Projects", "Education", "Contact"];
+  const items = ["Home","Skills", "Projects", "Education", "Contact"];
   return (
     <motion.div
       className="flex flex-col justify-center items-center relative z-10"
@@ -61,13 +61,14 @@ function SlideBar() {
       >
         <div className="absolute text-white  w-full h-full flex flex-col justify-center items-center">
           <motion.div
-            className="flex flex-col gap-5 text-3xl text-gray-500 font-semibold w-[200px] "
+            className="flex flex-col gap-8 text-5xl text-gray-500 font-semibold w-[200px] "
             variants={varients1}
           >
             {items.map((item) => (
               <motion.a
                 href={`#${item}`}
-                className="flex pointer-events-auto justify-center items-center text-gray-600 font-sans text-4xl hover:translate-x-1 duration-100"
+                className="flex pointer-events-auto justify-center items-center text-gray-600 font-sans text-5xl hover:translate-x-1 duration-100"
+                whileHover={{ scale: 1.2 }}
                 key={item}
                 variants={itemVariants}
               >

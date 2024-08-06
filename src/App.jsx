@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import MatterComponent from "./components/MatterComponent";
+import Skills from "./components/Skills";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <NavBar />
         <Hero />
       </section>
-      <section id="Skills">Skills</section>
+      <section id="Skills"><Skills/></section>
       <section id="Projects">Projects</section>
       <section id="Education">Education</section>
       <section id="Contact">Contact</section>
