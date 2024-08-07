@@ -57,7 +57,7 @@ function SlideBar() {
     >
       <motion.div
         variants={varients}
-        className="bg-white w-[80%] h-[70%] md:w-[400px] md:h-full  fixed top-0 left-0 cursor-pointer "
+        className="bg-white w-[90%] h-[100%] md:w-[400px] md:h-full  fixed top-0 left-0 cursor-pointer "
       >
         <div className="absolute text-white  w-full h-full flex flex-col justify-center items-center">
           <motion.div
@@ -81,7 +81,7 @@ function SlideBar() {
 
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className=" w-[45px] h-[45px] flex justify-center items-center bg-white rounded-[50%] fixed left-[15px] top-[5px]"
+        className=" w-[55px] h-[55px] left-[10px] top-[90px] flex justify-center items-center bg-white rounded-[50%] fixed md:left-[15px] md:top-[5px]"
       >
         {open ? (
           <AiOutlineClose className="h-[30px] w-[30px] absolute top-2 pointer-events-auto" />

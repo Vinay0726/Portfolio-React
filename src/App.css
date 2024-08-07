@@ -1,6 +1,9 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  
+
+  
 }
 
 * {
@@ -12,16 +15,25 @@ html {
 body {
   background-color: white;
   color: rgb(161, 159, 159);
-  overflow: hidden; /* Hide scrollbars */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  
 }
 
 section {
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
+  scroll-snap-stop: always;
+  
 }
+
 .neon-blue {
- filter: brightness(0) saturate(100%) invert(27%) sepia(78%) saturate(6159%) hue-rotate(229deg) brightness(105%) contrast(80%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(78%) saturate(6159%) hue-rotate(229deg) brightness(105%) contrast(80%);
 }
+
+
