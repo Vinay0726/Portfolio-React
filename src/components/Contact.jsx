@@ -61,23 +61,23 @@ const Contact = () => {
             },
           }}
         >
-          <h2 className="text-4xl ml-36 md:ml-0 text-gray-800 font-serif font-bold">
+          <h2 className="text-4xl ml-24 md:ml-0 text-gray-800 font-serif font-bold">
             Let's Connect
           </h2>
-          <h3 className="text-2xl md:text-xl mt-14 ml-10 md:ml-0 flex justify-center items-center gap-2 font-medium text-gray-600 font-serif">
+          <h3 className="text-2xl md:text-xl mt-10 ml-5 md:ml-0 flex justify-center items-center gap-2 font-medium text-gray-600 font-serif">
             Mail <MdOutlineMarkEmailUnread />
           </h3>
-          <p className="-mt-5 ml-10 md:ml-0">vinay.thaware1@gmail.com</p>
-          <h3 className="text-2xl md:text-xl ml-52 md:ml-0 font-medium flex justify-center items-center gap-2 text-gray-600 font-serif">
+          <p className="-mt-5 ml-6 md:ml-0">vinay.thaware1@gmail.com</p>
+          <h3 className="text-2xl md:text-xl ml-36 md:ml-0 font-medium flex justify-center items-center gap-2 text-gray-600 font-serif">
             Address
             <CiLocationOn />
           </h3>
-          <p className="-mt-5 ml-52 md:ml-0">Nagpur</p>
-          <h3 className="text-2xl md:text-xl ml-80 md:ml-0 font-medium flex justify-center items-center gap-2 text-gray-600 font-serif">
+          <p className="-mt-5 ml-36 md:ml-0">Nagpur</p>
+          <h3 className="text-2xl md:text-xl ml-64 md:ml-0 font-medium flex justify-center items-center gap-2 text-gray-600 font-serif">
             Phone
             <IoCallOutline />
           </h3>
-          <p className="-mt-5 ml-80 md:ml-0">+91 9373007087</p>
+          <p className="-mt-5 ml-64 md:ml-0">+91 9373007087</p>
         </motion.div>
         <motion.div
           className="h-[350px]  w-[400px] absolute top-[45%] z-[2] md:mt-0 md:top-[12%] md:left-[51.5%]"

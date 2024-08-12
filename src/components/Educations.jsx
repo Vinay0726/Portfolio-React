@@ -31,7 +31,7 @@ const Educations = () => {
             },
           }}
         >
-          <div className=" flex flex-col justify-center items-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
+          <div className=" flex flex-col justify-center items-center text-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
             <h1 className="text-l md:text-2xl text-gray-700 font-semibold">
               St. Vincent Pallotti College of Engineering and Technology, Nagpur
             </h1>

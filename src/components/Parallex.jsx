@@ -15,7 +15,7 @@ function Parallax() {
   return (
     <div ref={ref} className="w-full h-screen relative overflow-hidden">
       <motion.h1
-        className="text-8xl left-[15%] md:text-9xl font-semibold top-[20%] absolute md:left-[38%]"
+        className="text-6xl left-[25%] top-[25%]  md:text-9xl font-semibold md:top-[20%] absolute md:left-[38%]"
         style={{ y: yText }}
         transition={{ duration: 2, ease: "easeInOut" }}
       >
@@ -23,35 +23,35 @@ function Parallax() {
       </motion.h1>
       <motion.img
         src="/html.svg"
-        className="h-20 w-20 left-[5%] top-[5%] md:h-28 md:w-28 absolute -z-[1] md:left-[15%] md:top-[15%]"
+        className="h-16 w-16 left-[5%] top-[15%] md:h-28 md:w-28 absolute -z-[1] md:left-[15%] md:top-[15%]"
         alt="HTML"
         style={{ x: yBg }}
         transition={{ duration: 2, ease: "easeInOut" }}
       />
       <motion.img
         src="/css.svg"
-        className="h-20 w-20 left-[15%] top-[50%]  md:h-28 md:w-28 absolute -z-[1] md:left-[25%] md:top-[40%]"
+        className="h-16 w-16 left-[15%] top-[50%]  md:h-28 md:w-28 absolute -z-[1] md:left-[25%] md:top-[40%]"
         alt="CSS"
         style={{ x: yBg }}
         transition={{ duration: 2, ease: "easeInOut" }}
       />
       <motion.img
         src="/javascript1.svg"
-        className="h-16 w-16 right-[5%] top-[6%] md:h-24 md:w-24 absolute -z-[1] md:right-[15%] md:top-[15%]"
+        className="h-14 w-14 right-[5%] top-[15%] md:h-24 md:w-24 absolute -z-[1] md:right-[15%] md:top-[15%]"
         alt="JavaScript"
         style={{ x: xBg }}
         transition={{ duration: 2, ease: "easeInOut" }}
       />
       <motion.img
         src="/reactjs.svg"
-        className="h-24 w-24 left-[33%] top-[10%]  md:h-28 md:w-28 absolute -z-[1] md:left-[35%] md:top-[16%]"
+        className="h-20 w-20 left-[30%] top-[19%]  md:h-28 md:w-28 absolute -z-[1] md:left-[35%] md:top-[16%]"
         alt="React"
         style={{ x: yBg }}
         transition={{ duration: 2, ease: "easeInOut" }}
       />
       <motion.img
         src="/springboot.svg"
-        className="h-24 w-24 right-[35%] top-[35%]  md:h-28 md:w-28 absolute -z-[1] md:right-[35%] md:top-[25%]"
+        className="h-20 w-20 right-[25%] top-[31%]  md:h-28 md:w-28 absolute -z-[1] md:right-[35%] md:top-[25%]"
         alt="Spring Boot"
         style={{ x: xBg }}
         transition={{ duration: 2, ease: "easeInOut" }}

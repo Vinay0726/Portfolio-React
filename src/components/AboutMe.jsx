@@ -90,25 +90,39 @@ function AboutMe({close, setClose}) {
           </div>
         </div>
         <div className=" h-[45%] w-full">
-          <h1 className="ml-5 mt-5 md:mt-0 md:ml-40 text-blue-600 text-2xl font-bold">FULL STACK</h1>
-          <div className="flex ml-5 gap-5 w-[60%] md:ml-40 mt-10">
+          <h1 className="ml-5 mt-8 md:mt-0 md:ml-40 text-blue-600 text-2xl font-bold">
+            FULL STACK
+          </h1>
+          <div className="flex ml-5 gap-5 w-[70%] md:w-[70%] md:ml-40 mt-10">
             <div className="flex flex-col justify-center items-center">
-              <img src="/reactjs.svg" className="h-[80px] w-[80px]" alt="" />
+              <img
+                src="/reactjs.svg"
+                className="h-[50px] w-[50px] md:h-[80px] md:w-[80px]"
+                alt=""
+              />
               <p className="text-blue-300 font-semibold">React Js</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <img src="/springboot.svg" alt="" className="h-[80px] w-[80px]" />
+              <img
+                src="/springboot.svg"
+                alt=""
+                className="h-[50px] w-[50px] md:h-[80px] md:w-[80px]"
+              />
               <p className="text-green-300 font-semibold">SpringBoot</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <img src="/mysql.svg" alt="" className="h-[80px] w-[80px]" />
+              <img
+                src="/mysql.svg"
+                alt=""
+                className="h-[50px] w-[50px] md:h-[80px] md:w-[80px]"
+              />
               <p className="text-orange-400 font-semibold">MySQL</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="h-[30%] w-[100%] md:w-[40%] md:h-full flex justify-center items-center border-gray-60000">
-        <img src="/coder.svg" alt="" />
+      <div className="h-[20%] w-[100%] md:w-[40%] md:h-full flex justify-center items-center border-gray-60000">
+        <img src="/coder.svg" className="-mt-3 md:mt-0" alt="" />
       </div>
     </div>
   );

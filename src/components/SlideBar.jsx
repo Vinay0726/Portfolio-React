@@ -57,7 +57,7 @@ function SlideBar() {
     >
       <motion.div
         variants={varients}
-        className="bg-white w-[50%] h-[50%] md:w-[400px] md:h-full  fixed top-0 left-0 cursor-pointer "
+        className="bg-white w-[60%] h-[60%] md:w-[400px] md:h-full  fixed top-0 left-0 cursor-pointer "
       >
         <div className="absolute text-white  w-full h-full flex flex-col justify-center items-center">
           <motion.div
@@ -67,7 +67,7 @@ function SlideBar() {
             {items.map((item) => (
               <motion.a
                 href={`#${item}`}
-                className="flex pointer-events-auto justify-center items-center text-gray-600 font-sans text-5xl hover:translate-x-1 duration-100"
+                className="flex pointer-events-auto text-4xl justify-center items-center text-gray-600 font-sans md:text-5xl hover:translate-x-1 duration-100"
                 whileHover={{ scale: 1.2 }}
                 key={item}
                 variants={itemVariants}
