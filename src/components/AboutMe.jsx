@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
+
 function AboutMe({close, setClose}) {
   
 

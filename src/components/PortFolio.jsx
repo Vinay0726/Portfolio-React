@@ -7,18 +7,21 @@ const items = [
     title: "Banking Website",
     img: "https://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
+    technology: ["#react", "#Springboot", "#MySql"],
   },
   {
     id: 2,
     title: "Crud Operation",
     img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fauth0.com%2Fblog%2Fbuild-a-laravel-6-app-with-authentication%2F&psig=AOvVaw21fGWEpvTRnYHp_g-Wiuon&ust=1723130487662000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKijgbiX44cDFQAAAAAdAAAAABAY://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
+    technology: ["#laravel", "#PHP", "#MySql"],
   },
   {
     id: 3,
     title: "Jeera App",
     img: "httpshttps://www.google.com/url?sa=i&url=https%3A%2F%2Fcommunity.atlassian.com%2Ft5%2FJira-articles%2FA-better-navigation-for-Jira-Cloud-is-coming-soon-available-now%2Fba-p%2F1216077&psig=AOvVaw2qB70o4X2PcqKgwEM-xGFk&ust=1723130540952000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLijx9OX44cDFQAAAAAdAAAAABAK://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
+    technology: ["#Jira", "#React", "#API"],
   },
 ];
 
@@ -28,23 +31,36 @@ const Single = ({ items }) => {
     target: ref,
   });
 
-  const y = useSpring(useTransform(scrollYProgress, [0, 1], [-100, 100]), {
-    stiffness: 80,
-    damping: 20,
+  const y = useSpring(useTransform(scrollYProgress, [0, 1], [-100, 50]), {
+    stiffness: 60,
+    damping: 10,
   });
 
   return (
     <section>
-      <div className="container flex justify-center mt-24 gap-10 h-full w-full overflow-hidden">
+      <div className="container flex-col flex md:flex-row justify-center items-center md:items-stretch mt-24 gap-10 h-full w-full overflow-hidden">
         <div className="h-[350px] w-[350px]" ref={ref}>
           <img src={items.img} alt="" className="h-[350px] w-[350px]" />
         </div>
         <motion.div
-          className="textcontainer flex flex-col justify-center items-start h-[350px] w-[350px]"
+          className="textcontainer  flex flex-col justify-center items-start h-[350px] w-[350px]"
           style={{ y }}
         >
-          <h2 className="text-5xl font-semibold w-full hover:scale-x-105">{items.title}</h2>
+          <h2 className="text-5xl font-semibold w-full hover:scale-x-105">
+            {items.title}
+          </h2>
           <p className="text-l pt-10 w-full">{items.desc}</p>
+          <div className="mt-5 w-[95%] md:w-[95%]">
+            {items.technology.map((tech, index) => (
+              <button
+                key={index}
+                type="button"
+                className="text-gray-500 bg-transparent border border-gray-800 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-xl text-sm px-5 py-1.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                {tech}
+              </button>
+            ))}
+          </div>
           <a href="">
             <button
               type="button"
@@ -73,7 +89,7 @@ function PortFolio() {
 
   return (
     <div id="Projects" className="relative" ref={ref}>
-      <div className="sticky top-0 left-0 pt-[50px] text-center text-orange-300 text-6xl font-bold">
+      <div className="sticky top-10 md:top-0 left-0 pt-[50px] text-center text-orange-300 text-6xl font-bold">
         <h1>Featured Works</h1>
         <motion.div
           className="mt-4 h-[10px] bg-green-200 rounded-lg"

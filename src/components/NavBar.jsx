@@ -5,9 +5,9 @@ import SlideBar from "./SlideBar";
 
 function NavBar() {
   return (
-    <nav className="flex relative  pointer-events-none items-center justify-center gap-60 md:justify-center md:gap-0 md:items-center h-[60px] ">
+    <nav className="flex relative w-full pointer-events-none items-center justify-center gap-60 md:justify-center md:gap-0 md:items-center h-[60px] ">
       <SlideBar />
-      <div className=" w-[1024px] flex items-center justify-between md:justify-between h-[80px]">
+      <div className="w-full md:w-[1024px] flex items-center justify-between md:justify-between h-[80px]">
         <motion.span
           initial={{ opacity: 0.5, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}

@@ -2,8 +2,6 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   
-
-  
 }
 
 * {
@@ -18,8 +16,10 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
+
   
 }
+
 
 section {
   height: 100vh;
@@ -36,4 +36,6 @@ section {
   filter: brightness(0) saturate(100%) invert(27%) sepia(78%) saturate(6159%) hue-rotate(229deg) brightness(105%) contrast(80%);
 }
 
-
+.blue{
+filter: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(6091%) hue-rotate(243deg) brightness(53%) contrast(66%);
+}

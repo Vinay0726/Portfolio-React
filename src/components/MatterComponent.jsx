@@ -62,7 +62,7 @@ const MatterComponent = () => {
         render: {
           fillStyle: "transparent",
           strokeStyle: "#000", // Ring color
-          lineWidth: 2, // Ring thickness
+          lineWidth: 1, // Ring thickness
         },
         isStatic: true,
         plugin: {
