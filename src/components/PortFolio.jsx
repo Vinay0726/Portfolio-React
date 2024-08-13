@@ -43,7 +43,7 @@ const Single = ({ items }) => {
   return (
     <section>
       <div className="container flex-col flex md:flex-row justify-center items-center md:items-stretch mt-0 md:mt-24 gap-10 h-full w-full overflow-hidden">
-        <div className="h-[350px] -mt-32 md:mt-0 w-[350px]" ref={ref}>
+        <div className="h-[350px] -mt-24 md:mt-0 w-[350px]" ref={ref}>
           <img src={items.img} alt="" className="h-[350px] w-[350px]" />
         </div>
         <motion.div

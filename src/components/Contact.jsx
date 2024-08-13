@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div>
       <div
-        className="h-full w-full flex flex-col md:flex-row justify-center items-center gap-14 relative"
+        className="h-full w-screen md:w-full flex flex-col md:flex-row justify-center items-center gap-14 relative"
         ref={ref}
       >
         <motion.div
@@ -61,7 +61,7 @@ const Contact = () => {
             },
           }}
         >
-          <h2 className="text-4xl ml-24 md:ml-0 text-gray-800 font-serif font-bold">
+          <h2 className="text-4xl ml-20 md:ml-0 text-gray-800 font-serif font-bold">
             Let's Connect
           </h2>
           <h3 className="text-2xl md:text-xl mt-10 ml-5 md:ml-0 flex justify-center items-center gap-2 font-medium text-gray-600 font-serif">
@@ -80,7 +80,7 @@ const Contact = () => {
           <p className="-mt-5 ml-64 md:ml-0">+91 9373007087</p>
         </motion.div>
         <motion.div
-          className="h-[350px]  w-[400px] absolute top-[45%] z-[2] md:mt-0 md:top-[12%] md:left-[51.5%]"
+          className="h-[350px] w-[380px] md:w-[400px] absolute top-[45%] z-[2] md:mt-0 md:top-[12%] md:left-[51.5%]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -91,7 +91,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="h-full w-full flex gap-10 flex-col items-start md:gap-5"
+            className="h-full w-full flex  gap-5 flex-col items-start md:gap-5"
           >
             <input
               type="text"

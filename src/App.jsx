@@ -16,9 +16,9 @@ function App() {
     <>
       <div>
        <Cursor/>
-        <section id="Home" className="h-full w-full md:w-full">
+        <section id="Home" className="h-full  w-screen md:w-full">
           <div
-            class="absolute inset-0 -z-5 hidden md:block"
+            class="absolute inset-0 -z-5 h-screen hidden md:block"
             id="wrapper-canvas"
           >
             <MatterComponent />
@@ -28,7 +28,7 @@ function App() {
         </section>
         <section id="Skills">
           <Skills />
-        </section>
+        </section> 
         <section>
           <Parallex />
         </section>
@@ -38,7 +38,7 @@ function App() {
         </section>
         <section id="Contact">
           <Contact />
-        </section>
+        </section> 
       </div>
     </>
   );

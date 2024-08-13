@@ -3,7 +3,7 @@ import React from 'react'
 function Skills() {
   return (
     <div className="w-full h-full flex flex-col ">
-      <h1 className="text-center text-4xl ml-4 mt-36 md:-ml-14 md:mt-80 md:text-5xl text-blue-400 font-semibold font-sans">
+      <h1 className="text-center text-4xl ml-4 mt-10 md:-ml-14 md:mt-80 md:text-5xl text-blue-400 font-semibold font-sans">
         Skills
       </h1>
       <div className=" flex flex-col mt-32 h-[30%] md:flex-row justify-center items-center gap-5 md:mt-10 ml-40 w-[80%] md:h-[25%]">
@@ -63,7 +63,7 @@ function Skills() {
         </div>
       </div>
 
-      <div className="w-[91%] h-[23%] ml-5 border border-blue-300 md:border-none p-5 mt-32 md:w-[25%] md:mt-2 md:ml-[35%] md:h-[25%] md:p-0 shadow-xl rounded-lg">
+      <div className="w-[91%] h-[24%] ml-5 border border-blue-300 md:border-none p-5 mt-32 md:w-[25%] md:mt-2 md:ml-[35%] md:h-[25%] md:p-0 shadow-xl rounded-lg">
         <h1 className="text-center  text-gray-800 font-mono font-bold text-2xl">
           Tools
         </h1>

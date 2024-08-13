@@ -34,8 +34,8 @@ function Hero() {
 
   
   return (
-    <div className="w-[100%] md:h-full md:w-screen">
-      <div className="h-96 ml-5 gap-8  duration-300 mt-[80%] md:w-[400px] md:h-80 relative -z-0 flex flex-col justify-center items-start md:gap-6  md:mt-[10%] md:ml-[20%] pointer-events-none">
+    <div className="w-screen  md:h-full md:w-screen">
+      <div className="h-96 ml-5 gap-8  duration-300 mt-[70%] md:w-[400px] md:h-80 relative -z-0 flex flex-col justify-center items-start md:gap-6  md:mt-[10%] md:ml-[20%] pointer-events-none">
         <motion.div
           className="text-6xl text-gray-700 font-semibold md:text-6xl md:font-bold font-serif md:text-black"
           variants={textVarient}
@@ -77,7 +77,7 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className="-left-10 -z-10 top-40 h-[600px] w-[500px] md:h-[550px]  md:w-[600px] absolute md:z-0 md:top-20 md:left-[35%] pointer-events-none">
+      <div className="-left-10 -z-10 top-20 h-[600px] w-[500px] md:h-[550px]  md:w-[600px] absolute md:z-0 md:top-20 md:left-[35%] pointer-events-none">
         <motion.img
           src="/logo.png"
           className="w-full  -mt-28 h-full neon-blue"
