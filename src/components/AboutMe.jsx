@@ -122,7 +122,7 @@ function AboutMe({close, setClose}) {
         </div>
       </div>
       <div className="h-[20%] w-[100%] md:w-[40%] md:h-full flex justify-center items-center border-gray-60000">
-        <img src="/coder.svg" className="-mt-3 md:mt-0" alt="" />
+        <img src="/coder.svg" className="-mt-3 md:mt-0 hidden md:block" alt="" />
       </div>
     </div>
   );
