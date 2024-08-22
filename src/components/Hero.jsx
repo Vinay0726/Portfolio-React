@@ -63,7 +63,7 @@ function Hero() {
           >
             About Me
           </motion.button>
-          <a href="/Resume/MyResume.docx" download={"VinayThaware_Resume"}>
+          <a href="/Resume/VinayThaware_Resume.pdf" download={"VinayThaware_Resume"}>
             {" "}
             <motion.button
               type="button"

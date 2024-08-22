@@ -4,29 +4,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Banking Website",
-    img: "https://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
-    technology: [
-      "#react",
-      "#Springboot",
-      "#MySql"
-    ],
+    title: "EasyBank Website",
+    img: "/easybank.png",
+    desc: "Developed a comprehensive banking application to provide solutions for managing customer accounts efficiently across different roles Admin, Employee, User, reducing manual account management time by 40%",
+    technology: ["#Thymeleaf", "#Springboot", "#MySql"],
+    link: "https://online-banking-website-production.up.railway.app/",
   },
   {
     id: 2,
-    title: "Crud Operation",
-    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fauth0.com%2Fblog%2Fbuild-a-laravel-6-app-with-authentication%2F&psig=AOvVaw21fGWEpvTRnYHp_g-Wiuon&ust=1723130487662000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKijgbiX44cDFQAAAAAdAAAAABAY://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
-    technology: ["#laravel", "#PHP", "#MySql"],
+    title: "Employee Management System",
+    img: "/employeems.png",
+    desc: "Developed a comprehensive Employee Management System to manage employee data efficiently.• Implemented CRUD operations and REST API for data management, along with search and pagination functionalities, improving data retrieval speed by 30%",
+    technology: ["#React", "#Springboot", "#MySql"],
+    link: "https://employee-ms-vinay.netlify.app/",
   },
-  {
-    id: 3,
-    title: "Jeera App",
-    img: "httpshttps://www.google.com/url?sa=i&url=https%3A%2F%2Fcommunity.atlassian.com%2Ft5%2FJira-articles%2FA-better-navigation-for-Jira-Cloud-is-coming-soon-available-now%2Fba-p%2F1216077&psig=AOvVaw2qB70o4X2PcqKgwEM-xGFk&ust=1723130540952000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLijx9OX44cDFQAAAAAdAAAAABAK://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
-    technology: ["#Jira", "#React", "#API"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Jeera App",
+  //   img: "httpshttps://www.google.com/url?sa=i&url=https%3A%2F%2Fcommunity.atlassian.com%2Ft5%2FJira-articles%2FA-better-navigation-for-Jira-Cloud-is-coming-soon-available-now%2Fba-p%2F1216077&psig=AOvVaw2qB70o4X2PcqKgwEM-xGFk&ust=1723130540952000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLijx9OX44cDFQAAAAAdAAAAABAK://img.freepik.com/premium-vector/bank-building-banking-icons_24908-75261.jpg?w=740",
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda suscipit, perspiciatis blanditiis veritatis debitis sapiente nobis! Suscipit corporis aliquam eum dolores alias quidem voluptates explicabo? In saepe repudiandae dolore",
+  //   technology: ["#Jira", "#React", "#API"],
+  // },
 ];
 
 const Single = ({ items }) => {
@@ -44,7 +42,7 @@ const Single = ({ items }) => {
     <section>
       <div className="container flex-col flex md:flex-row justify-center items-center md:items-stretch mt-0 md:mt-24 gap-10 h-full w-full overflow-hidden">
         <div className="h-[350px] -mt-24 md:mt-0 w-[350px]" ref={ref}>
-          <img src={items.img} alt="" className="h-[350px] w-[350px]" />
+          <img src={items.img} alt="" className="h-[300px] w-full" />
         </div>
         <motion.div
           className="textcontainerflex mt-8 md:mt-20 flex-col md:justify-center items-start h-[350px] w-[350px]"
@@ -65,7 +63,7 @@ const Single = ({ items }) => {
               </button>
             ))}
           </div>
-          <a href="">
+          <a href={items.link}>
             <button
               type="button"
               className="py-1 md:py-2 mt-3 md:mt-5 w-20 px-4 flex justify-center items-center gap-x-2 text-sm md:text-l font-medium rounded-md md:rounded-lg border border-transparent bg-teal-100 text-teal-800 hover:bg-teal-200 focus:outline-none focus:bg-teal-200 disabled:opacity-50 disabled:pointer-events-none"
