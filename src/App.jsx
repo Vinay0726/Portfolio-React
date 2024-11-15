@@ -33,7 +33,7 @@ function App() {
           <Parallex />
         </section>
         <PortFolio />
-        <section id="Education">
+        <section id="Education" className="mb-52">
           <Educations />
         </section>
         <section id="Contact">

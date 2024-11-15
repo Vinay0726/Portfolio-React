@@ -50,7 +50,7 @@ const Contact = () => {
         ref={ref}
       >
         <motion.div
-          className="h-[350px] w-[400px]  flex  flex-col justify-start items-start gap-5"
+          className="h-[350px] w-[400px]  flex ml-5 flex-col justify-start items-start gap-5"
           initial={{ opacity: 0, y: 200 }}
           animate={{
             y: isInView ? 0 : -200,
@@ -91,7 +91,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="h-full w-full flex  gap-5 flex-col items-start md:gap-5"
+            className="h-full w-full flex  gap-5 flex-col md:-ml-14 items-start md:gap-5"
           >
             <input
               type="text"

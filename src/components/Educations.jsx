@@ -6,14 +6,14 @@ const Educations = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="w-[420px]  md:w-full h-full flex flex-col items-center">
+    <div className="w-[420px] pb-5  md:w-full h-full flex flex-col items-center">
       <h1 className="text-7xl font-serif font-medium p-5">Education</h1>
       <p className="w-[400px] text-l text-center p-4 flex justify-center items-center">
         My education has been a journey of self-discovery and growth. My
         educational details are as follows.
       </p>
       <div
-        className="mt-10 gap-10 flex flex-col justify-center items-center md:mt-0 md:gap-2"
+        className="mt-0 md:mt-20 gap-10 flex flex-col justify-center items-center lg:mt-0 md:gap-20 lg:gap-2"
         ref={ref}
       >
         <motion.div
@@ -31,18 +31,18 @@ const Educations = () => {
             },
           }}
         >
-          <div className=" flex flex-col justify-center items-center text-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
-            <h1 className="text-l md:text-2xl text-gray-700 font-semibold">
+          <div className=" flex flex-col justify-center items-center -ml-1 text-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
+            <h1 className="text-l md:text-2xl text-gray-700 mt-1 font-semibold">
               St. Vincent Pallotti College of Engineering and Technology, Nagpur
             </h1>
-            <h2 className="text-sm md:text-xl text-gray-500 ">
+            <h2 className="text-sm -mt-5 md:text-xl text-gray-500 ">
               Bacheler of Engineering-BE, Information and Technology
             </h2>
-            <h3 className="text-l md:text-xl text-gray-400">2019-2023</h3>
+            <h3 className="text-l -mt-5 md:text-xl text-gray-400">2019-2023</h3>
           </div>
           <div className="w-[5%] h-full flex flex-col justify-center items-center gap-3">
             <div className="circle h-5 w-5 border-2 border-blue-400 rounded-full"></div>
-            <div className="line h-[87%] w-1 bg-green-300 rou"></div>
+            <div className="line h-[87%] w-1 bg-green-300 "></div>
           </div>
         </motion.div>
         <motion.div
@@ -60,7 +60,7 @@ const Educations = () => {
             },
           }}
         >
-          <div className=" flex flex-col justify-center items-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
+          <div className=" flex flex-col justify-center items-center -ml-1 gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
             <h1 className="text-l md:text-2xl text-gray-700 font-semibold">
               ST. FRANCIS DE SALES COLLEGE, NAGPUR
             </h1>
@@ -89,7 +89,7 @@ const Educations = () => {
             },
           }}
         >
-          <div className=" flex flex-col justify-center items-center gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
+          <div className=" flex flex-col justify-center items-center -ml-1 gap-6 w-[95%] h-full border border-blue-300 shadow-lg rounded-lg hover:bg-gray-100 hover:scale-[1.01]">
             <h1 className="text-l md:text-2xl text-gray-700 font-semibold">
               Jawahar High School , Nagpur
             </h1>

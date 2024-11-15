@@ -35,7 +35,7 @@ function Hero() {
   
   return (
     <div className="w-screen  md:h-full md:w-screen">
-      <div className="h-96 ml-5 gap-8  duration-300 mt-[70%] md:w-[400px] md:h-80 relative -z-0 flex flex-col justify-center items-start md:gap-6  md:mt-[10%] md:ml-[20%] pointer-events-none">
+      <div className="h-96 ml-5 lg:p-10 gap-8   duration-300 mt-[70%] md:w-[400px] md:h-80 relative -z-0 flex flex-col justify-center items-start md:gap-6  md:mt-[30%] lg:mt-[10%] md:ml-[20%] pointer-events-none">
         <motion.div
           className="text-6xl text-gray-700 font-semibold md:text-6xl md:font-bold font-serif md:text-black"
           variants={textVarient}
@@ -63,7 +63,10 @@ function Hero() {
           >
             About Me
           </motion.button>
-          <a href="/Resume/VinayThaware_Resume.pdf" download={"VinayThaware_Resume"}>
+          <a
+            href="/Resume/VinayThaware_Resume.pdf"
+            download={"VinayThaware_Resume"}
+          >
             {" "}
             <motion.button
               type="button"
@@ -80,7 +83,7 @@ function Hero() {
       <div className="-left-10 -z-10 top-20 h-[600px] w-[500px] md:h-[550px]  md:w-[600px] absolute md:z-0 md:top-20 md:left-[35%] pointer-events-none">
         <motion.img
           src="/logo.png"
-          className="w-full  -mt-28 h-full neon-blue"
+          className="w-full -mt-28 md:mt-14 lg:-mt-16 h-full neon-blue"
           alt=""
           variants={logoVarient}
           initial="initial"
@@ -146,12 +149,12 @@ function Hero() {
       </div>
 
       <AboutMe close={close} setClose={setClose} />
-      <div className=" h-10 flex justify-center items-center  relative top-40">
+      <div className=" h-10 flex justify-center items-center  relative top-40 lg:top-20">
         <div className="h-12 w-full hidden md:block ">
           <a href="#Home">
             {" "}
             <button
-              className="bg-gray-100 -mt-5 relative left-[94%] h-full w-560 text-gray-800 font-bold rounded-md hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 flex justify-center items-center"
+              className="bg-gray-100 -mt-5 relative left-[90%] lg:left-[93%] h-full w-560 text-gray-800 font-bold rounded-md hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 flex justify-center items-center"
               type="submit"
               aria-label="Go Down"
             >
@@ -172,7 +175,7 @@ function Hero() {
           <a href="#Skills">
             {" "}
             <button
-              className="bg-gray-100 mt-3 relative left-[94%] h-full w-560 text-gray-800 font-bold rounded-md hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 flex justify-center items-center"
+              className="bg-gray-100 mt-3 relative left-[90%] lg:left-[93%] h-full w-560 text-gray-800 font-bold rounded-md hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 flex justify-center items-center"
               type="submit"
               aria-label="Go Down"
             >

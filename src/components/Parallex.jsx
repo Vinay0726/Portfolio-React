@@ -13,9 +13,12 @@ function Parallax() {
    const yText = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
 
   return (
-    <div ref={ref} className="w-full  h-screen relative overflow-hidden">
+    <div
+      ref={ref}
+      className="w-full mt-40 md:mt-0 lg:mt-5   h-screen relative overflow-hidden"
+    >
       <motion.h1
-        className="text-6xl left-[25%] top-[25%]  md:text-9xl font-semibold md:top-[20%] absolute md:left-[38%]"
+        className="text-7xl left-[22%] top-[35%]  md:text-9xl font-semibold md:top-[30%] lg:top-[20%] absolute   md:left-[22%] lg:left-[35%]"
         style={{ y: yText }}
         transition={{ duration: 2, ease: "easeInOut" }}
       >

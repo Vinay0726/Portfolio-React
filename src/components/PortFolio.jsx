@@ -4,19 +4,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
+    title: "Resume Craft",
+    img: "/resumecraft.png",
+    desc: "Created a dynamic resume builder platform with Gemini AI suggestions for roles, objectives, and project descriptions, enhancing user personalization and content quality",
+    technology: ["#React", "#Springboot", "#MySql", "#Gemini Ai"],
+    link: "https://resumescraft.netlify.app/",
+  },
+  {
+    id: 2,
     title: "EasyBank Website",
     img: "/easybank.png",
     desc: "Developed a comprehensive banking application to provide solutions for managing customer accounts efficiently across different roles Admin, Employee, User, reducing manual account management time by 40%",
     technology: ["#Thymeleaf", "#Springboot", "#MySql"],
-    link: "https://online-banking-website-production.up.railway.app/",
+    link: "https://easy-bank.up.railway.app/index",
   },
   {
-    id: 2,
-    title: "Employee Management System",
-    img: "/employeems.png",
-    desc: "Developed a comprehensive Employee Management System to manage employee data efficiently.• Implemented CRUD operations and REST API for data management, along with search and pagination functionalities, improving data retrieval speed by 30%",
+    id: 3,
+    title: "Fashion Nest",
+    img: "/fashionnest.png",
+    desc: "Developed an eCommerce platform, improving product availability management and reducing product update time by 30% Improved user experience with advanced search filters, mobile responsiveness, and order tracking,resulting in a 25% increase in customer engagemen",
     technology: ["#React", "#Springboot", "#MySql"],
-    link: "https://employee-ms-vinay.netlify.app/",
+    link: "https://fashionnestt.netlify.app/",
   },
   // {
   //   id: 3,
@@ -91,10 +99,10 @@ function PortFolio() {
 
   return (
     <div id="Projects" className="relative" ref={ref}>
-      <div className="sticky top-10 text-4xl md:top-0 left-0 pt-[50px] text-center text-orange-300 md:text-6xl font-bold">
+      <div className="sticky top-0 pt-10 text-4xl md:top-0 left-0  text-center text-orange-300 md:text-6xl font-bold">
         <h1>Featured Works</h1>
         <motion.div
-          className="mt-4 h-[10px] bg-green-200 rounded-lg"
+          className="mt-4 h-[10px] bg-green-200 mb-5 rounded-lg"
           style={{ scaleX }}
         ></motion.div>
       </div>
